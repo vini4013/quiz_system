@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+
+
+	
+	<title>
+		Welcome to the quiz
+	</title>	
+</head>
+<body>
+	<div class=" flex-container flex-row "><!--fullbodyDiv-->
+		<div class="flex-row w-100"><!--heading-->
+			<div class=" flex-row w-100 h-10 justify-c text-blue font-l m-20 p-20">
+				SmartQUIZ	
+			</div>
+			<div class="flex-row w-100 justify-c text-blue font-m">
+				Fill the details below to take a quiz
+			</div>		
+		</div><!--heading-->
+		
+		<div class="flex-row w-100 justify-c"><!--pagebody-->
+
+			<div class="flex-row w-60 b-1 justify-c contentBox" id="contentbox"><!--contentbox-->
+			  <div class="flex-row w-100" id="userInfoBox"><!--userInfoBox-->
+				<div class="flex-row">
+					<label> Name</label>
+				</div>
+				<div class="flex-row ">
+					<input type="text" name="name" class="w-100">
+				</div>
+				<div class="flex-row mt-20">
+					<label> Email</label>
+				</div>
+				<div class="flex-row ">
+					<input type="text" name="email" class="w-100">
+				</div>
+				<div class="flex-row justify-r">
+					<button class="btn" id="sub_btn"> Next-></button>	
+				</div>
+			  </div><!--userInfoBox-->
+
+			  <div class="flex-row w-100" id="queBox">
+			  	<div class="queNo flex-row font-m " id="queNo">
+			  		Question 0 of 5
+			  	</div>
+			  	<div class="question flex-row " id="question">
+			  		What is your company name?
+			  		
+			  	</div>
+			  	<div class="option_box flex-row" id="options">
+			  		<div class="option flex-row " id="option_a">
+			  			option 1 nfnvjefoherhfbhf 
+			  		</div>
+			  		<div class="option flex-row " id="option_b">
+			  			option 1
+			  		</div>
+			  		<div class="option flex-row " id="option_c">
+			  			option 1
+			  		</div>
+			  		<div class="option flex-row " id="option_d">
+			  			option 1
+			  		</div>
+			  		
+			  	</div>
+			  	<div class="flex-row justify-sb  mt-20">
+			  		<div class="btn2 text-c lh-30" id="prev_btn">
+			  			Prev
+			  		</div>
+			  		<div class="btn2 text-c lh-30 bg-blue" id="submit_btn">
+			  			Submit
+			  		</div>
+			  		<div class="btn2 text-c lh-30" id="next_btn">
+			  			Next
+			  		</div>
+			  		
+			  	</div>			  	
+			  </div>
+			  <div class="flex-row" id="result" >
+                 <div class="flex-row font-m " id="">
+			  			Hi there, your result is
+			  	</div>
+
+			    <div class=" flex-row font-l justify-c m-20" id="score">
+			  			Score: 
+			  	</div>
+
+			  	<div class="flex-row justify-sb mt-20"> 
+			  		<div class="card " id="">
+			  			Total: 5
+			  		</div>
+			  		<div class="card " id="">
+			  			Attempted: <span id="atempt"></span>
+			  		</div>
+			  		<div class="card " id="">
+			  			Correct: <span id="correct"></span>
+			  		</div>
+			  	
+			  	</div>
+			  </div>
+			
+			</div><!--contentbox-->
+		
+		</div><!--pagebody-->
+	</div><!--fullbodyDiv-->
+	
+</body>
+
+
+</html>
+
+	<script type="text/javascript" src="questions.json"></script>
+	<script type="text/javascript" src="quiz.js"></script>
