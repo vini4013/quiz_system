@@ -5,6 +5,7 @@ var interval=Math.floor((Math.random() * 4) + 1);
 var curQue=-1;
 var queArr=[];
 var atempt=0, correct=0;
+var flag=0;
 //var que=[];
 
 function question(queId,response){
@@ -14,7 +15,6 @@ function question(queId,response){
 var count=0;
 
 for(i=start; count<5; i=i+interval){
-  
    if (i>19){
    	i=i%20;
    }
@@ -39,6 +39,7 @@ function loadQuestion(i){
 	document.getElementById("option_b").innerHTML=data[i].b;
 	document.getElementById("option_c").innerHTML=data[i].c;
 	document.getElementById("option_d").innerHTML=data[i].d;
+	document.getElementById("queNo").innerHTML="Question  "+ (curQue+1)+" of 5";
 	showResponse();
 
 }
@@ -50,7 +51,8 @@ function test(){
 function setResponse(response){
 	queArr[curQue].response=response;
 	nextQue();
-  
+	if (flag==1) {show_result();}
+
 }
 
 function startQuiz(){
@@ -96,6 +98,9 @@ function showResponse(){
 	 	manage_prev();
 	 	manage_next();
  	}
+ 	else{
+ 		flag=1;
+ 	}
  	//console.log(curQue);
  	//curQue++;
  }
@@ -108,37 +113,37 @@ function showResponse(){
 	 	manage_prev();
 	 	manage_next();
   	}
-  	
- 	
  }
  function show_result(){
- 	//confirm("Are you sure you want to submit the test?");
- 	
- 	for(i=0;i<5;i++){
- 		//id=queArr[i].num;
- 		if(queArr[i].response){
- 			atempt++;
-        	if (data[queArr[i].num].ans==queArr[i].response) {
-        	  	correct++;
-        	}
- 		}
- 	}
- 	document.getElementById("score").innerHTML= "Score: "+correct;
- 	document.getElementById("atempt").innerHTML= atempt;
- 	document.getElementById("correct").innerHTML= correct;
- 	document.getElementById("result").style.display="flex";
- 	document.getElementById("queBox").style.display="none";
+ 	if(confirm("Are you sure you want to submit the test?")){
+	 	for(i=0;i<5;i++){
+	 		//id=queArr[i].num;
+	 		if(queArr[i].response){
+	 			atempt++;
+	        	if (data[queArr[i].num].ans==queArr[i].response) {
+	        	  	correct++;
+	        	}
+	 		}
+	 	}
+	 	document.getElementById("score").innerHTML= "Score: "+correct;
+	 	document.getElementById("atempt").innerHTML= atempt;
+	 	document.getElementById("correct").innerHTML= correct;
+	 	document.getElementById("result").style.display="flex";
+	 	document.getElementById("queBox").style.display="none";
 
+ 	}else{
+ 		showResponse();
+ 	}
  	//console.log(atempt);
  	//console.log(correct);
  }
 
 document.getElementById('sub_btn').addEventListener('click', showQuiz);
 
-document.getElementById('option_a').addEventListener('click', function(){setResponse("a");});
-document.getElementById('option_b').addEventListener('click', function(){setResponse("b");});
-document.getElementById('option_c').addEventListener('click', function(){setResponse("c");});
-document.getElementById('option_d').addEventListener('click', function(){setResponse("d");});
+document.getElementById('option_a').addEventListener('click', function(){setResponse("a"); });
+document.getElementById('option_b').addEventListener('click', function(){setResponse("b"); });
+document.getElementById('option_c').addEventListener('click', function(){setResponse("c"); });
+document.getElementById('option_d').addEventListener('click', function(){setResponse("d"); });
 
 document.getElementById('next_btn').addEventListener('click',nextQue);
 document.getElementById('prev_btn').addEventListener('click',prevQue);
