@@ -8,28 +8,50 @@ var atempt=0, correct=0;
 var flag=0;
 //var que=[];
 
+
+var limit = 29;//in seconds
+var time=limit;
+var timer;
+
+function starTimer(){
+	 timer= setInterval(myTimer, 1000);
+	//window.setTimeout(show_result, limit*1000);
+}
+
+function myTimer() {
+	if (time>=0) {
+		document.getElementById("timer").innerHTML = "Time left: "+time-- + " s";
+	}
+	else{
+		
+		show_result("timeout");
+	}
+  
+  console.log(time);
+}
+
 function question(queId,response){
 	this.num=queId;
 	this.response=response;
 }
 var count=0;
-
 for(i=start; count<5; i=i+interval){
    if (i>19){
    	i=i%20;
    }
    //que.num=i;
    queArr[count]= new question(i);
-   count++;
-	
+   count++;	
 }
 console.log(queArr);
 
 function showQuiz(){
  document.getElementById('userInfoBox').style.display="none";
+ document.getElementById('heading1').style.display="none";
+ document.getElementById('heading2').style.display="flex";
  document.getElementById('queBox').style.display="flex";
  nextQue(queArr[0].num);
-
+ starTimer();
 }
 
 function loadQuestion(i){
@@ -41,7 +63,6 @@ function loadQuestion(i){
 	document.getElementById("option_d").innerHTML=data[i].d;
 	document.getElementById("queNo").innerHTML="Question  "+ (curQue+1)+" of 5";
 	showResponse();
-
 }
 
 function test(){
@@ -52,12 +73,8 @@ function setResponse(response){
 	queArr[curQue].response=response;
 	nextQue();
 	if (flag==1) {show_result();}
-
 }
 
-function startQuiz(){
-
-}
 
 function manage_prev(){
   if (curQue<=0) {
@@ -90,7 +107,7 @@ function showResponse(){
  
 }
 
- function nextQue(){
+function nextQue(){
  	if(curQue<4){
  		curQue++;
  		console.log(curQue);
@@ -103,9 +120,9 @@ function showResponse(){
  	}
  	//console.log(curQue);
  	//curQue++;
- }
+}
 
-  function prevQue(){
+function prevQue(){
   	if (curQue>0) {
   		curQue--;
   		console.log(curQue);
@@ -113,30 +130,47 @@ function showResponse(){
 	 	manage_prev();
 	 	manage_next();
   	}
- }
- function show_result(){
- 	if(confirm("Are you sure you want to submit the test?")){
-	 	for(i=0;i<5;i++){
+}
+function calResult(){
+	for(i=0;i<5;i++){
 	 		//id=queArr[i].num;
-	 		if(queArr[i].response){
-	 			atempt++;
-	        	if (data[queArr[i].num].ans==queArr[i].response) {
-	        	  	correct++;
-	        	}
-	 		}
+	 	if(queArr[i].response){
+	 		atempt++;
+	       	if (data[queArr[i].num].ans==queArr[i].response) {
+	       	  	correct++;
+	       	}
 	 	}
-	 	document.getElementById("score").innerHTML= "Score: "+correct;
-	 	document.getElementById("atempt").innerHTML= atempt;
-	 	document.getElementById("correct").innerHTML= correct;
-	 	document.getElementById("result").style.display="flex";
-	 	document.getElementById("queBox").style.display="none";
+	 }
+	 document.getElementById("score").innerHTML= "Score: "+correct;
+	 document.getElementById("atempt").innerHTML= atempt;
+	 document.getElementById("time").innerHTML= (limit-time)+"s";
+	 document.getElementById("result").style.display="flex";
+	 document.getElementById("queBox").style.display="none";
 
- 	}else{
- 		showResponse();
- 	}
+}
+
+function show_result(submit_type){
+	if(submit_type=='timeout'){
+		alert("Time up! Click ok to show results.");
+		clearInterval(timer);
+		document.getElementById("timer").style.display="none";
+		calResult();
+	}
+	else{
+		if(confirm("Are you sure you want to submit the test?")){
+			clearInterval(timer);
+			document.getElementById("timer").style.display="none";
+	  		calResult();	
+ 		}else{
+ 			showResponse();
+ 		}
+
+	}
  	//console.log(atempt);
  	//console.log(correct);
- }
+}
+
+
 
 document.getElementById('sub_btn').addEventListener('click', showQuiz);
 
@@ -144,9 +178,12 @@ document.getElementById('option_a').addEventListener('click', function(){setResp
 document.getElementById('option_b').addEventListener('click', function(){setResponse("b"); });
 document.getElementById('option_c').addEventListener('click', function(){setResponse("c"); });
 document.getElementById('option_d').addEventListener('click', function(){setResponse("d"); });
-
 document.getElementById('next_btn').addEventListener('click',nextQue);
 document.getElementById('prev_btn').addEventListener('click',prevQue);
-
 document.getElementById('submit_btn').addEventListener('click', show_result);
+
+
+
+
+
 

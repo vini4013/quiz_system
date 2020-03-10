@@ -9,14 +9,24 @@
 </head>
 <body>
 	<div class=" flex-container flex-row "><!--fullbodyDiv-->
-		<div class="flex-row w-100"><!--heading-->
+		<div class="flex-row w-100" id="heading1" ><!--heading1-->
 			<div class=" flex-row w-100 h-10 justify-c text-blue font-l m-20 p-20">
 				SmartQUIZ	
 			</div>
 			<div class="flex-row w-100 justify-c text-blue font-m">
 				Fill the details below to take a quiz
 			</div>		
-		</div><!--heading-->
+		</div><!--heading1-->
+		<div class="flex-row  justify-sb" id="heading2"><!--heading2-->
+			<div class="   font-30">
+				SmartQUIZ	
+			</div>
+			<div class="  font-30" id="timer">
+				Time left: 30 s
+			</div>
+
+			
+		</div><!--heading2-->
 		
 		<div class="flex-row w-100 justify-c"><!--pagebody-->
 			<div class="flex-row w-60 b-1 justify-c contentBox" id="contentbox"><!--contentbox-->
@@ -33,10 +43,17 @@
 					<label> Email</label>
 				</div>
 				<div class="flex-row ">
-					<input type="text" name="email" class="w-100">
+					<input type="email" name="email" class="w-100">
+				</div>
+				<div class=" flex-row justify-c mt-30">
+					Number of questions : 5
+					
+				</div>
+				<div class=" flex-row justify-c mt-10">
+					Time LImit : 30s
 				</div>
 				<div class="flex-row justify-r">
-					<button class="btn" id="sub_btn"> Next-></button>	
+					<button class="btn" id="sub_btn"> Start</button>	
 				</div>
 			  </div><!--userInfoBox-->
 			
@@ -70,7 +87,7 @@
 			  			Prev
 			  		</div>
 			  		
-			  		<div class="btn2 text-c lh-30" id="next_btn">
+			  		<div class="btn2 text-c lh-30 ml-10" id="next_btn">
 			  			Next
 			  		</div>
 			  		
@@ -98,7 +115,7 @@
 			  			Attempted: <span id="atempt"></span>
 			  		</div>
 			  		<div class="card " id="">
-			  			Correct: <span id="correct"></span>
+			  			Time taken: <span id="time"></span>
 			  		</div>
 			  	
 			  	</div>
@@ -114,5 +131,5 @@
 
 </html>
 
-	<script type="text/javascript" src="questions.json"></script>
-	<script type="text/javascript" src="quiz.js"></script>
+<script type="text/javascript" src="questions.json"></script>
+<script type="text/javascript" src="quiz.js"></script>
