@@ -1,0 +1,192 @@
+data = [
+	{    
+		"id":"1",
+		"question": "World Civil Defence Day is observed on which date?",
+		"a":"27th February",
+		"b":"28th February",
+		"c":"29th February",
+		"d":"1st March",
+		"ans":"d"
+	},
+	{    
+		"id":"2",
+		"question": "Who has been appointed as the new Prime Minister of Malaysia?",
+		"a":"Najib Razak",
+		"b":"Muhyiddin Yassin",
+		"c":"Mahathir Mohamad",
+		"d":"Anwar Ibrahim",
+		"ans":"b"
+	},
+	{    
+		"id":"3",
+		"question": "Which of the following launched India's First Service Audio Service 'Suno?'",
+		"a":"Netflix",
+		"b":"Audible",
+		"c":"Google",
+		"d":"Facebook",
+		"ans":"b"
+	},
+	{
+		"id":"4",
+		"question": "Milkha Singh Stood ____ in 1960 Olympics, in Athletics.",
+		"a":"fourth in 400m final",
+		"b":"second in 400m final",
+		"c":"eighth in 50km walk",
+		"d":"seventh in 800m final",
+		"ans":"a"
+	},
+	{
+		"id":"5",
+		"question":"Kemal Ataturk was",
+		"a": "the first President of Independent Kenya",
+		"b":"the founder of modern Turkey",
+		"c":"revolutionary leader of Soviet Union",
+		"d":"None of the above",
+		"ans":"b"
+	},
+	{
+		"id":"6",
+		"question":"National Institute of Occupation Health is located at",
+		"a": "Bangalore",
+		"b":"Pune",
+		"c":"Ahmedabad",
+		"d":"Mumbai",
+		"ans":"c"
+
+	},
+	{
+		"id":"7",
+		"question":"National Institute of Oceanography is located at",
+		"a": "Panaji (Goa)",
+		"b":"Lucknow (Uttar Pradesh)",
+		"c":"Pune (Maharashtra)",
+		"d":"Nagpur (Maharashtra)",
+		"ans":"a"
+
+	},
+	{
+		"id":"8",
+		"question":"How long is an IPv6 address?",
+		"a": "32 bits",
+		"b":"128 bytes",
+		"c":"64 bits",
+		"d":"128 bits",
+		"ans":"d"
+
+	},
+	{
+		"id":"9",
+		"question":"Look at this series: 53, 53, 40, 40, 27, 27, ... What number should come next?",
+		"a": "12",
+		"b":"14",
+		"c":"27",
+		"d":"53",
+		"ans":"b"
+
+	},
+	{
+		"id":"10",
+		"question":"Look at this series: 7, 10, 8, 11, 9, 12, ... What number should come next?",
+		"a": "7",
+		"b":"10",
+		"c":"12",
+		"d":"13",
+		"ans":"b"
+
+	},
+	{
+		"id":"11",
+		"question":"Marathon is to race as hibernation is to",
+		"a": "winter",
+		"b":"bear",
+		"c":"dream",
+		"d":"sleep",
+		"ans":"d"
+	},
+	{
+		"id":"12",
+		"question":"Window is to pane as book is to",
+		"a": "novel",
+		"b":"glass",
+		"c":"cover",
+		"d":"page",
+		"ans":"d"
+	},
+	{
+		"id":"13",
+		"question":"Brass gets discoloured in air because of the presence of which of the following gases in air?",
+		"a": "Oxygen",
+		"b":"Hydrogen sulphide",
+		"c":"Carbon dioxide",
+		"d":"Nitrogen",
+		"ans":"b"
+	},
+	{
+		"id": "14",
+		"question": "Chlorophyll is a naturally occurring chelate compound in which central metal is",
+		"a": "copper",
+		"b": "iron",
+		"c": "magnesium",
+		"d": "calcium",
+		"ans": "c"
+	},
+	{
+		"id":"15",
+		"question":"Which of the following metals forms an amalgam with other metals?",
+		"a": "Tin",
+		"b":"Mercury",
+		"c":"Lead",
+		"d":"Zinc",
+		"ans":"b"
+	},
+	{
+		"id":"16",
+		"question":"Which of the following is used in pencils?",
+		"a": "Graphite",
+		"b":"Silicon",
+		"c":"Charcoal",
+		"d":"Phosphorous",
+		"ans":"a"
+
+	},
+	{
+		"id":"17",
+		"question":"With which sport is the Jules Rimet trophy associated?",
+		"a": "Basketball",
+		"b":"Golf",
+		"c":"Hockey",
+		"d":"Football",
+		"ans":"d"
+
+	},
+	{
+		"id":"18",
+		"question":"Which of the following is in liquid form at room temperature?",
+		"a": "Lithium",
+		"b":"Sodium",
+		"c":"Francium",
+		"d":"Aluminium",
+		"ans":"c"
+
+	},
+	{
+		"id":"19",
+		"question":"Marsh gas is",
+		"a": "Helium",
+		"b":"Hydrogen",
+		"c":"Methane",
+		"d":"Neon",
+		"ans":"c"
+
+	},
+	{
+		"id":"20",
+		"question":"Air is a ",
+		"a": "Compound",
+		"b":"Element",
+		"c":"Electrolyte",
+		"d":"Mixture",
+		"ans":"d"
+
+	}
+]
