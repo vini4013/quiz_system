@@ -1,24 +1,42 @@
-data = [
-	{    
+data1 = [
+	{
 		"id":"1",
-		"question": "World Civil Defence Day is observed on which date?",
-		"a":"27th February",
-		"b":"28th February",
-		"c":"29th February",
-		"d":"1st March",
+		"question": "Grand Central Terminal, Park Avenue, New York is the world's",
+		"a":"largest railway station",
+		"b":"highest railway station",
+		"c":"longest railway station",
+		"d":"None of the above",
+		"ans":"a"
+	},
+	{
+		"id":"2",
+		"question": "Entomology is the science that studies",
+		"a":"Behavior of human beings",
+		"b":"Insects",
+		"c":"The origin and history of technical and scientific terms",
+		"d":"The formation of rocks",
+		"ans":"b"
+	},
+	{
+		"id":"3",
+		"question": "For which of the following disciplines is Nobel Prize awarded?",
+		"a":"Physics and Chemistry",
+		"b":"Physiology or Medicine",
+		"c":"Literature, Peace and Economics",
+		"d":"All of the above	",
 		"ans":"d"
 	},
-	{    
-		"id":"2",
-		"question": "Who has been appointed as the new Prime Minister of Malaysia?",
-		"a":"Najib Razak",
-		"b":"Muhyiddin Yassin",
-		"c":"Mahathir Mohamad",
-		"d":"Anwar Ibrahim",
+	{
+		"id":"4",
+		"question": "Hitler party which came into power in 1933 is known as",
+		"a":"Labour Party",
+		"b":"Nazi Party",
+		"c":"Ku-Klux-Klan",
+		"d":"Democratic Party",
 		"ans":"b"
 	},
 	{    
-		"id":"3",
+		"id":"5",
 		"question": "Which of the following launched India's First Service Audio Service 'Suno?'",
 		"a":"Netflix",
 		"b":"Audible",
@@ -27,166 +45,233 @@ data = [
 		"ans":"b"
 	},
 	{
-		"id":"4",
-		"question": "Milkha Singh Stood ____ in 1960 Olympics, in Athletics.",
-		"a":"fourth in 400m final",
-		"b":"second in 400m final",
-		"c":"eighth in 50km walk",
-		"d":"seventh in 800m final",
-		"ans":"a"
-	},
-	{
-		"id":"5",
-		"question":"Kemal Ataturk was",
-		"a": "the first President of Independent Kenya",
-		"b":"the founder of modern Turkey",
-		"c":"revolutionary leader of Soviet Union",
-		"d":"None of the above",
-		"ans":"b"
-	},
-	{
 		"id":"6",
-		"question":"National Institute of Occupation Health is located at",
-		"a": "Bangalore",
-		"b":"Pune",
-		"c":"Ahmedabad",
-		"d":"Mumbai",
-		"ans":"c"
-
-	},
-	{
-		"id":"7",
 		"question":"National Institute of Oceanography is located at",
 		"a": "Panaji (Goa)",
 		"b":"Lucknow (Uttar Pradesh)",
 		"c":"Pune (Maharashtra)",
 		"d":"Nagpur (Maharashtra)",
 		"ans":"a"
-
 	},
 	{
-		"id":"8",
-		"question":"How long is an IPv6 address?",
-		"a": "32 bits",
-		"b":"128 bytes",
-		"c":"64 bits",
-		"d":"128 bits",
-		"ans":"d"
-
-	},
-	{
-		"id":"9",
-		"question":"Look at this series: 53, 53, 40, 40, 27, 27, ... What number should come next?",
-		"a": "12",
-		"b":"14",
-		"c":"27",
-		"d":"53",
-		"ans":"b"
-
-	},
-	{
-		"id":"10",
-		"question":"Look at this series: 7, 10, 8, 11, 9, 12, ... What number should come next?",
-		"a": "7",
-		"b":"10",
-		"c":"12",
-		"d":"13",
-		"ans":"b"
-
-	},
-	{
-		"id":"11",
-		"question":"Marathon is to race as hibernation is to",
-		"a": "winter",
-		"b":"bear",
-		"c":"dream",
-		"d":"sleep",
-		"ans":"d"
-	},
-	{
-		"id":"12",
-		"question":"Window is to pane as book is to",
-		"a": "novel",
-		"b":"glass",
-		"c":"cover",
-		"d":"page",
-		"ans":"d"
-	},
-	{
-		"id":"13",
-		"question":"Brass gets discoloured in air because of the presence of which of the following gases in air?",
-		"a": "Oxygen",
-		"b":"Hydrogen sulphide",
-		"c":"Carbon dioxide",
-		"d":"Nitrogen",
-		"ans":"b"
-	},
-	{
-		"id": "14",
-		"question": "Chlorophyll is a naturally occurring chelate compound in which central metal is",
-		"a": "copper",
-		"b": "iron",
-		"c": "magnesium",
-		"d": "calcium",
-		"ans": "c"
-	},
-	{
-		"id":"15",
-		"question":"Which of the following metals forms an amalgam with other metals?",
-		"a": "Tin",
-		"b":"Mercury",
-		"c":"Lead",
-		"d":"Zinc",
-		"ans":"b"
-	},
-	{
-		"id":"16",
+		"id":"7",
 		"question":"Which of the following is used in pencils?",
 		"a": "Graphite",
 		"b":"Silicon",
 		"c":"Charcoal",
 		"d":"Phosphorous",
 		"ans":"a"
-
 	},
 	{
-		"id":"17",
-		"question":"With which sport is the Jules Rimet trophy associated?",
-		"a": "Basketball",
-		"b":"Golf",
-		"c":"Hockey",
-		"d":"Football",
-		"ans":"d"
-
-	},
-	{
-		"id":"18",
-		"question":"Which of the following is in liquid form at room temperature?",
-		"a": "Lithium",
-		"b":"Sodium",
-		"c":"Francium",
-		"d":"Aluminium",
-		"ans":"c"
-
-	},
-	{
-		"id":"19",
+		"id":"8",
 		"question":"Marsh gas is",
 		"a": "Helium",
 		"b":"Hydrogen",
 		"c":"Methane",
 		"d":"Neon",
 		"ans":"c"
-
 	},
 	{
-		"id":"20",
+		"id":"9",
 		"question":"Air is a ",
 		"a": "Compound",
 		"b":"Element",
 		"c":"Electrolyte",
 		"d":"Mixture",
 		"ans":"d"
+	},
+	{
+		"id":"10",
+		"question": "Galileo was an Italian astronomer who",
+		"a":"developed the telescope",
+		"b":"discovered four satellites of Jupiter",
+		"c":"discovered that the movement of pendulum produces a regular time measurement",
+		"d":"All of the above",
+		"ans":"d"
+	}
+]
+data2=[
+	{
+		"id":"1",
+		"question": "The average of 20 numbers is zero. Of them, at the most, how many may be greater than zero?",
+		"a":"0",
+		"b":"1",
+		"c":"10",
+		"d":"19",
+		"ans":"d"
+	},
+	{
+		"id":"2",
+		"question": "The average monthly income of P and Q is Rs. 5050. The average monthly income of Q and R is Rs. 6250 and the average monthly income of P and R is Rs. 5200. The monthly income of P is:",
+		"a":"3500",
+		"b":"4000",
+		"c":"4050",
+		"d":"5000",
+		"ans":"b"
+	},
+	{
+		"id":"3",
+		"question": "The average age of husband, wife and their child 3 years ago was 27 years and that of wife and the child 5 years ago was 20 years. The present age of the husband is:",
+		"a":"35 years",
+		"b":"40 years",
+		"c":"50 years",
+		"d":"None of these",
+		"ans":"b"
+	},
+	{
+		"id":"4",
+		"question": "Look at this series: 22, 21, 23, 22, 24, 23, ... What number should come next?",
+		"a":"22",
+		"b":"24",
+		"c":"25",
+		"d":"26",
+		"ans":"c"
+	},
+	{
+		"id":"5",
+		"question": "Look at this series: 36, 34, 30, 28, 24, ... What number should come next?",
+		"a":"20",
+		"b":"22",
+		"c":"23",
+		"d":"26",
+		"ans":"b"
+	},
+	{
+		"id":"6",
+		"question": "Look at this series: 2, 4, 6, 8, 10, ... What number should come next?",
+		"a":"11",
+		"b":"12",
+		"c":"14",
+		"d":"13",
+		"ans":"b"
+	},
+	{
+		"id":"7",
+		"question": "Look at this series: 544, 509, 474, 439, ... What number should come next?",
+		"a":"404",
+		"b":"414",
+		"c":"420",
+		"d":"445",
+		"ans":"a"
+	},
+	{
+		"id":"8",
+		"question": "Look at this series: 8, 6, 9, 23, 87 , ... What number should come next?",
+		"a":"128",
+		"b":"226",
+		"c":"297",
+		"d":"429",
+		"ans":"d"
+	},
+	{
+		"id":"9",
+		"question":"Look at this series: 53, 53, 40, 40, 27, 27, ... What number should come next?",
+		"a":"12",
+		"b":"14",
+		"c":"27",
+		"d":"53",
+		"ans":"b"
+	},
+	{
+		"id":"10",
+		"question":"Look at this series: 7, 10, 8, 11, 9, 12, ... What number should come next?",
+		"a":"7",
+		"b":"10",
+		"c":"12",
+		"d":"13",
+		"ans":"b"
+	}
+]
 
+data3=[
+	{
+		"id":"1",
+		"question":"Flow : River :: Stagnant : ?",
+		"a":"Rain",
+		"b":"Stream",
+		"c":"Pool",
+		"d":"Canal",
+		"ans":"c"
+	},
+	{
+		"id":"2",
+		"question":"Architect : Building :: Sculptor : ?",
+		"a":"Museum",
+		"b":"Stone",
+		"c":"Chisel",
+		"d":"Statue",
+		"ans":"d"
+	},
+	{
+		"id":"3",
+		"question":"Microphone : Loud :: Microscope : ?",
+		"a":"Elongate",
+		"b":"Investigate",
+		"c":"Magnify",
+		"d":"Examine",
+		"ans":"c"
+	},
+	{
+		"id":"4",
+		"question":"Find the correctly spelt words.",
+		"a": "Efficient",
+		"b":"Treatmeant",
+		"c":"Beterment",
+		"d":"Employd",
+		"ans":"a"
+	},
+	{
+		"id":"5",
+		"question":"Find the correctly spelt words.",
+		"a": "Benefitted",
+		"b":"Benifited",
+		"c":"Benefited",
+		"d":"Benefeted",
+		"ans":"c"
+	},
+	{
+		"id":"6",
+		"question":"To keeps one's temper",
+		"a": "To become hungry",
+		"b":"To be in good mood",
+		"c":"To preserve ones energy",
+		"d":"To be aloof from",
+		"ans":"b"
+	},
+	{
+		"id":"7",
+		"question":"To have an axe to grind",
+		"a": "A private end to serve",
+		"b":"To fail to arouse interest",
+		"c":"To have no result",
+		"d":"To work for both sides",
+		"ans":"a"
+	},
+	{
+		"id":"8",
+		"question":"Fate smiles ...... those who untiringly grapple with stark realities of life.",
+		"a":"with",
+		"b":"over",
+		"c":"on",
+		"d":"round",
+		"ans":"c"
+	},
+	{
+		"id":"9",
+		"question":"Choose the word which is the exact OPPOSITE of 'ENORMOUS'",
+		"a":"Soft",
+		"b":"Average",
+		"c":"Tiny",
+		"d":"Weak",
+		"ans":"c"
+	},
+	{
+		"id":"10",
+		"question":"Choose the word which best expresses the meaning of 'EMBEZZLE",
+		"a":"Misappropriate",
+		"b":"Balance",
+		"c":"Remunerate",
+		"d":"Clear",
+		"ans":"a"
 	}
 ]

@@ -45,6 +45,17 @@
 				<div class="flex-row ">
 					<input type="email" name="email" class="w-100">
 				</div>
+				<div class="flex-row mt-20">
+					<label> Category</label>
+				</div>
+				<div class="flex-row ">
+					<select id="category">
+						<option value="2"> Aptitude</option>
+						<option value="3"> Verbal</option>
+						<option value="1"> General Knowlegde</option>
+						
+					</select> 
+				</div>
 				<div class=" flex-row justify-c mt-30">
 					Number of questions : 5
 					
@@ -59,25 +70,30 @@
 			
 
 			  <div class="flex-row w-100" id="queBox">
-			 
-			  	<div class="queNo flex-row font-m " id="queNo">
-			  		Question 0 of 5
-			  	</div>
+			  	<div class="queNo font-m " id="queNo">
+			  			Question 0 of 5
+				</div>
+			   
+			  
 			  	<div class="question flex-row " id="question">
-			  		What is your company name?
-			  		
+			  		What is your company name?	
 			  	</div>
+			  	 
+				<div class="flex-row queNo text-blue text-c justify-c " id="ans_res">
+				  		
+			  	</div>    	
+			    
 			  	<div class="option_box flex-row" id="options">
-			  		<div class="option flex-row " id="option_a">
+			  		<div class="option flex-row op-hover" id="option_a">
 			  			option 1 nfnvjefoherhfbhf 
 			  		</div>
-			  		<div class="option flex-row " id="option_b">
+			  		<div class="option flex-row op-hover" id="option_b">
 			  			option 1
 			  		</div>
-			  		<div class="option flex-row " id="option_c">
+			  		<div class="option flex-row op-hover" id="option_c">
 			  			option 1
 			  		</div>
-			  		<div class="option flex-row " id="option_d">
+			  		<div class="option flex-row op-hover" id="option_d">
 			  			option 1
 			  		</div>
 			  		
@@ -90,11 +106,17 @@
 			  		<div class="btn2 text-c lh-30 ml-10" id="next_btn">
 			  			Next
 			  		</div>
+			  		<div class="btn2 text-c lh-30 ml-10" id="reset_btn">
+			  			Reset
+			  		</div>
 			  		
 			  	</div>	
 			  	<div class="flex-row justify-c">
 				  	<div class=" text-c lh-30 bg-blue mt-20" id="submit_btn">
 				  			Finish Test
+				  	</div>
+				  	<div class="text-c lh-30 bg-blue mt-20" id="back_btn">
+				  			Go Back 
 				  	</div>
 			  	</div>		  	
 			  </div>
@@ -117,7 +139,13 @@
 			  		<div class="card " id="">
 			  			Time taken: <span id="time"></span>
 			  		</div>
-			  	
+			  	</div>
+			  	<div class="flex-row justify-c">
+			  		<div class="btn text-c" id="view_ans">
+			  			View Answers
+			  			
+			  		</div>
+			  		
 			  	</div>
 			  </div>
 			
