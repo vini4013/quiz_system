@@ -52,7 +52,6 @@ data = [
 		"c":"Ahmedabad",
 		"d":"Mumbai",
 		"ans":"c"
-
 	},
 	{
 		"id":"7",
@@ -62,7 +61,6 @@ data = [
 		"c":"Pune (Maharashtra)",
 		"d":"Nagpur (Maharashtra)",
 		"ans":"a"
-
 	},
 	{
 		"id":"8",
@@ -72,7 +70,6 @@ data = [
 		"c":"64 bits",
 		"d":"128 bits",
 		"ans":"d"
-
 	},
 	{
 		"id":"9",
@@ -82,7 +79,6 @@ data = [
 		"c":"27",
 		"d":"53",
 		"ans":"b"
-
 	},
 	{
 		"id":"10",
@@ -92,7 +88,6 @@ data = [
 		"c":"12",
 		"d":"13",
 		"ans":"b"
-
 	},
 	{
 		"id":"11",
@@ -147,7 +142,6 @@ data = [
 		"c":"Charcoal",
 		"d":"Phosphorous",
 		"ans":"a"
-
 	},
 	{
 		"id":"17",
@@ -157,7 +151,6 @@ data = [
 		"c":"Hockey",
 		"d":"Football",
 		"ans":"d"
-
 	},
 	{
 		"id":"18",
@@ -167,7 +160,6 @@ data = [
 		"c":"Francium",
 		"d":"Aluminium",
 		"ans":"c"
-
 	},
 	{
 		"id":"19",
@@ -177,7 +169,6 @@ data = [
 		"c":"Methane",
 		"d":"Neon",
 		"ans":"c"
-
 	},
 	{
 		"id":"20",
@@ -187,6 +178,5 @@ data = [
 		"c":"Electrolyte",
 		"d":"Mixture",
 		"ans":"d"
-
 	}
 ]
